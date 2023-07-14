@@ -6,9 +6,9 @@ The revenue of banks takes a massive hit when their customers leave. Also, acqui
 This project aims to predict customer attrition using their demographic and bank-related data. An XGBoost classification model predicts the outcome.
 
 ## Data
-The data used for this project is the ABC bank's [Customer Churn Dataset](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset).
+The data used for this project is the ABC bank's [Customer Churn Dataset](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset). It contains customer data of account holders at ABC Multinational Bank.
 
- It contains customer data of account holders at ABC Multinational Bank. Visit the above link for more information about the dataset.
+A dedicated binary column named "churn" is present in the data which takes the value 1 if a customer as churned and 0 otherwise. It is found that there is a **class imbalance problem** and synthetic data oversampling is used to handle this issue.
 
  ## Modelling
  Various classification models such as Logistic Regression, K-NN, Tree based Bagging and Boosting models were evaluated. XGBoost classifier had the best performance and was chosen as the final model.
